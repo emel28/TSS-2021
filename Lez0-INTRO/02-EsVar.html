@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <title>Esercizio Variabili</title>
+</head>
+<body>
+  <!-- <h1>Calcolo IVA</h1> -->
+
+    <script type="text/javascript">
+    //Calcolo dell'IVA
+    const IVA = 0.22;
+    var imponibile = 20000;
+
+    //manipolazione dei dati
+    var prezzoIvato = (imponibile * IVA) + imponibile;
+
+    var costoIva = prezzoIvato - imponibile;
+
+    console.log("Calcolo IVA su imponibile");
+
+    console.log(prezzoIvato + " prezzo con IVA imposta");
+    console.log(costoIva + " costo IVA");
+    console.log(typeof prezzoIvato);
+    console.log(typeof costoIva);
+ 
+    //Questo metodo document.write scrive nella pagina html, cioè nel DOCUMENT
+    document.write("<h1>Calcolo dell'IVA</h1>");
+    
+    var saluta = "<p>Stiamo elaborando il calcolo dell'IVA</p> <br>";
+
+    document.write(saluta);
+
+    document.write("<p>Il prezzo Ivato è di: " +  prezzoIvato + "</p> <br>");
+    document.write("<p> Il costo dell'IVA è : " + costoIva + "</p> <br>");
+    document.write("L'IVa è stata calcolata con un valore di :  " + IVA + "</p> <br>");
+    
+
+    // Risolvi e stampa le risposte del problema di matematica più famoso del mondo
+    //Genitore1 va al mercato e compra 10 mele, poi compra 8 pacchi di pasta.
+    //Torna a casa e Genitore2 calcola quanti oggetti ci sono nei sacchetti. 
+    //Stampa a video, in console e nella pagina HTML, la risposta corretta.
+
+
+
+    
+    </script>
+</body>
+</html>
